@@ -11,9 +11,9 @@
         <nav>
             <ul>
                 <li><a href="#buildings">Home</a></li>
-                <li><a href="#staff">Employee</a></li>
-                <li><a href="#" onclick="showInfo()">Information</a></li>
-                <li><a href="YOUR_DISCORD_INVITE_LINK_HERE" target="_blank" class="discord-btn">Join Discord</a></li>
+                <li><a href="employee.html">Employee</a></li>
+                <li><a href="information.html">Information</a></li>
+                <li><a href="https://discord.gg/NyUmvfAzC4" target="_blank" class="discord-btn">Join Discord</a></li>
             </ul>
         </nav>
         <h1>আমাদের রিয়েল এস্টেট কোম্পানি</h1>
@@ -25,22 +25,7 @@
         <div id="building-list"></div>
     </section>
 
-    <section id="staff">
-        <h2>আমাদের টিম</h2>
-        <div class="staff-grid">
-            <div class="staff-card">
-                <h3>জন ডো</h3>
-                <p>সেলস ম্যানেজার | ইমেইল: john@example.com | ফোন: 01xxxxxxxxx</p>
-            </div>
-            <div class="staff-card">
-                <h3>জেন স্মিথ</h3>
-                <p>মার্কেটিং হেড | ইমেইল: jane@example.com | ফোন: 01xxxxxxxxx</p>
-            </div>
-            <!-- আরও স্টাফ যোগ করুন -->
-        </div>
-    </section>
-
-    <!-- পপআপ মডাল -->
+    <!-- বিল্ডিং ডিটেইলস মডাল -->
     <div id="modal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
@@ -49,17 +34,21 @@
         </div>
     </div>
 
-    <!-- বুকিং রিকোয়েস্ট ফর্ম (মডালের ভিতরে লোড হবে) -->
-    <div id="request-form" class="form-hidden">
-        <h3>বুকিং রিকোয়েস্ট পাঠান</h3>
-        <form id="booking-form">
-            <input type="text" id="name" placeholder="আপনার নাম" required>
-            <input type="email" id="email" placeholder="ইমেইল" required>
-            <input type="tel" id="phone" placeholder="ফোন নম্বর" required>
-            <textarea id="message" placeholder="আপনার মেসেজ" required></textarea>
-            <input type="hidden" id="apartment-type" value="">
-            <button type="submit">সাবমিট করুন</button>
-        </form>
+    <!-- বুকিং রিকোয়েস্ট ফর্ম মডাল -->
+    <div id="booking-modal" class="modal">
+        <div class="modal-content">
+            <span class="booking-close">&times;</span>
+            <h3>বুকিং রিকোয়েস্ট পাঠান</h3>
+            <form id="booking-form">
+                <input type="text" id="name" placeholder="আপনার নাম" required>
+                <input type="email" id="email" placeholder="ইমেইল" required>
+                <input type="tel" id="phone" placeholder="ফোন নম্বর" required>
+                <textarea id="message" placeholder="আপনার মেসেজ" required></textarea>
+                <input type="hidden" id="apartment-type" value="">
+                <input type="hidden" id="building-name" value="">
+                <button type="submit">সাবমিট করুন</button>
+            </form>
+        </div>
     </div>
 
     <script src="script.js"></script>
