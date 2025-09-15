@@ -56,15 +56,16 @@ function openModal(buildingIndex) {
     apartmentsList.innerHTML = '';
 
     building.apartments.forEach((apt, aptIndex) => {
-        const item = document.createElement('div');
-        item.className = 'apartment-item';
-        item.innerHTML = `
-            <strong>টাইপ:</strong> ${apt.type} | <strong>স্টোরেজ:</strong> ${apt.storage} | 
-            <strong>ক্যাপাসিটি:</strong> ${apt.capacity} জন | 
-            <strong>স্ট্যাটাস:</strong> <span style="color: ${apt.available ? 'green' : 'red'}">${apt.available ? 'Available' : 'Not Available'}</span>
+        const card = document.createElement('div');
+        card.className = 'apartment-card';
+        card.innerHTML = `
+            <p><strong>টাইপ:</strong> ${apt.type}</p>
+            <p><strong>স্টোরেজ:</strong> ${apt.storage}</p>
+            <p><strong>ক্যাপাসিটি:</strong> ${apt.capacity} জন</p>
+            <p><strong>স্ট্যাটাস:</strong> <span style="color: ${apt.available ? 'green' : 'red'}">${apt.available ? 'Available' : 'Not Available'}</span></p>
             ${apt.available ? `<button class="book-btn" onclick="showBookingForm('${building.name}', '${apt.type}')">Book Now</button>` : ''}
         `;
-        apartmentsList.appendChild(item);
+        apartmentsList.appendChild(card);
     });
 
     modal.style.display = 'block';
