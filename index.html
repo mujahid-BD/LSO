@@ -8,16 +8,31 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#buildings">Home</a></li>
-                <li><a href="employee.html">Employee</a></li>
-                <li><a href="information.html">Information</a></li>
-                <li><a href="YOUR_DISCORD_INVITE_LINK_HERE" target="_blank" class="discord-btn">Join Discord</a></li>
-            </ul>
-        </nav>
-        <h1>আমাদের রিয়েল এস্টেট কোম্পানি</h1>
-        <p>সেরা বাসা-ঘরের সমাধান</p>
+        <div class="header-container">
+            <nav class="nav-left">
+                <ul>
+                    <li><a href="#buildings">Home</a></li>
+                    <li><a href="employee.html">Employee</a></li>
+                    <li><a href="information.html">Information</a></li>
+                    <li><a href="YOUR_DISCORD_INVITE_LINK_HERE" target="_blank" class="discord-btn">Join Discord</a></li>
+                </ul>
+            </nav>
+            <div class="header-title">
+                <h1>আমাদের রিয়েল এস্টেট কোম্পানি</h1>
+                <p>সেরা বাসা-ঘরের সমাধান</p>
+            </div>
+            <div class="search-filter-container">
+                <input type="text" id="search-input" placeholder="বিল্ডিং বা অ্যাপার্টমেন্ট সার্চ করুন..." />
+                <select id="filter-select">
+                    <option value="all">সব</option>
+                    <option value="available">Available</option>
+                    <option value="not-available">Not Available</option>
+                    <option value="1BHK">1BHK</option>
+                    <option value="2BHK">2BHK</option>
+                    <option value="3BHK">3BHK</option>
+                </select>
+            </div>
+        </div>
     </header>
 
     <!-- অটো-স্ক্রল নোটিস সিস্টেম -->
@@ -56,6 +71,14 @@
                 <button type="submit">সাবমিট করুন</button>
             </form>
         </div>
+    </div>
+
+    <!-- লাইটবক্স মডাল -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <button class="lightbox-prev">&larr;</button>
+        <img id="lightbox-image" src="" alt="Apartment Image">
+        <button class="lightbox-next">&rarr;</button>
     </div>
 
     <script src="script.js"></script>
