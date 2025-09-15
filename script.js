@@ -4,20 +4,65 @@ const buildings = [
         name: "গ্রিন ভ্যালি টাওয়ার",
         image: "https://via.placeholder.com/300x150?text=Green+Valley",
         apartments: [
-            { type: "2BHK", storage: "1200 sq ft", capacity: 4, available: true, image: "https://via.placeholder.com/250x120?text=2BHK" },
-            { type: "3BHK", storage: "1500 sq ft", capacity: 6, available: false, image: "https://via.placeholder.com/250x120?text=3BHK" },
-            { type: "1BHK", storage: "800 sq ft", capacity: 2, available: true, image: "https://via.placeholder.com/250x120?text=1BHK" }
+            {
+                type: "2BHK",
+                storage: "1200 sq ft",
+                capacity: 4,
+                available: true,
+                images: [
+                    "https://via.placeholder.com/600x400?text=2BHK+Living",
+                    "https://via.placeholder.com/600x400?text=2BHK+Kitchen",
+                    "https://via.placeholder.com/600x400?text=2BHK+Bedroom"
+                ]
+            },
+            {
+                type: "3BHK",
+                storage: "1500 sq ft",
+                capacity: 6,
+                available: false,
+                images: [
+                    "https://via.placeholder.com/600x400?text=3BHK+Living",
+                    "https://via.placeholder.com/600x400?text=3BHK+Kitchen"
+                ]
+            },
+            {
+                type: "1BHK",
+                storage: "800 sq ft",
+                capacity: 2,
+                available: true,
+                images: [
+                    "https://via.placeholder.com/600x400?text=1BHK+Living"
+                ]
+            }
         ]
     },
     {
         name: "ব্লু স্কাই অ্যাপার্টমেন্ট",
         image: "https://via.placeholder.com/300x150?text=Blue+Sky",
         apartments: [
-            { type: "2BHK", storage: "1100 sq ft", capacity: 4, available: false, image: "https://via.placeholder.com/250x120?text=2BHK" },
-            { type: "3BHK", storage: "1600 sq ft", capacity: 6, available: true, image: "https://via.placeholder.com/250x120?text=3BHK" }
+            {
+                type: "2BHK",
+                storage: "1100 sq ft",
+                capacity: 4,
+                available: false,
+                images: [
+                    "https://via.placeholder.com/600x400?text=2BHK+Living",
+                    "https://via.placeholder.com/600x400?text=2BHK+Bedroom"
+                ]
+            },
+            {
+                type: "3BHK",
+                storage: "1600 sq ft",
+                capacity: 6,
+                available: true,
+                images: [
+                    "https://via.placeholder.com/600x400?text=3BHK+Living",
+                    "https://via.placeholder.com/600x400?text=3BHK+Balcony",
+                    "https://via.placeholder.com/600x400?text=3BHK+Kitchen"
+                ]
+            }
         ]
     }
-    // আরও বিল্ডিং যোগ করুন
 ];
 
 // Discord Webhook URL (আপনারটা পেস্ট করুন)
@@ -32,11 +77,22 @@ const closeBtn = document.querySelector('.close');
 const bookingModal = document.getElementById('booking-modal');
 const bookingCloseBtn = document.querySelector('.booking-close');
 const bookingForm = document.getElementById('booking-form');
+const lightbox = document.getElementById('lightbox');
+const lightboxImage = document.getElementById('lightbox-image');
+const lightboxClose = document.querySelector('.lightbox-close');
+const lightboxPrev = document.querySelector('.lightbox-prev');
+const lightboxNext = document.querySelector('.lightbox-next');
+const searchInput = document.getElementById('search-input');
+const filterSelect = document.getElementById('filter-select');
+
+// লাইটবক্স ভেরিয়েবল
+let currentImages = [];
+let currentImageIndex = 0;
 
 // বিল্ডিং লিস্ট রেন্ডার করুন
-function renderBuildings() {
+function renderBuildings(filteredBuildings = buildings) {
     buildingList.innerHTML = '';
-    buildings.forEach((building, index) => {
+    filteredBuildings.forEach((building, index) => {
         const card = document.createElement('div');
         card.className = 'building-card';
         card.innerHTML = `
@@ -59,7 +115,7 @@ function openModal(buildingIndex) {
         const card = document.createElement('div');
         card.className = 'apartment-card';
         card.innerHTML = `
-            <img src="${apt.image}" alt="${apt.type}">
+            <img src="${apt.images[0]}" alt="${apt.type}" onclick="openLightbox(${buildingIndex}, ${aptIndex})">
             <p><strong>টাইপ:</strong> ${apt.type}</p>
             <p><strong>স্টোরেজ:</strong> ${apt.storage}</p>
             <p><strong>ক্যাপাসিটি:</strong> ${apt.capacity} জন</p>
@@ -71,6 +127,74 @@ function openModal(buildingIndex) {
 
     modal.style.display = 'block';
 }
+
+// লাইটবক্স ওপেন করুন
+function openLightbox(buildingIndex, aptIndex) {
+    currentImages = buildings[buildingIndex].apartments[aptIndex].images;
+    currentImageIndex = 0;
+    updateLightboxImage();
+    lightbox.style.display = 'block';
+}
+
+// লাইটবক্সে ছবি আপডেট করুন
+function updateLightboxImage() {
+    lightboxImage.src = currentImages[currentImageIndex];
+    lightboxPrev.style.display = currentImages.length > 1 ? 'block' : 'none';
+    lightboxNext.style.display = currentImages.length > 1 ? 'block' : 'none';
+}
+
+// লাইটবক্স নেভিগেশন
+lightboxPrev.onclick = () => {
+    currentImageIndex = (currentImageIndex - 1 + currentImages.length) % currentImages.length;
+    updateLightboxImage();
+};
+
+lightboxNext.onclick = () => {
+    currentImageIndex = (currentImageIndex + 1) % currentImages.length;
+    updateLightboxImage();
+};
+
+lightboxClose.onclick = () => {
+    lightbox.style.display = 'none';
+};
+
+window.onclick = (event) => {
+    if (event.target === lightbox) {
+        lightbox.style.display = 'none';
+    }
+    if (event.target === modal) {
+        modal.style.display = 'none';
+    }
+    if (event.target === bookingModal) {
+        bookingModal.style.display = 'none';
+    }
+};
+
+// ফিল্টার এবং সার্চ ফাংশন
+function filterBuildings() {
+    const searchTerm = searchInput.value.toLowerCase();
+    const filterValue = filterSelect.value;
+
+    let filteredBuildings = buildings.map(building => ({
+        ...building,
+        apartments: building.apartments.filter(apt => {
+            if (filterValue === 'all') return true;
+            if (filterValue === 'available') return apt.available;
+            if (filterValue === 'not-available') return !apt.available;
+            return apt.type === filterValue;
+        })
+    })).filter(building => {
+        return building.apartments.length > 0 && 
+               (building.name.toLowerCase().includes(searchTerm) ||
+                building.apartments.some(apt => apt.type.toLowerCase().includes(searchTerm)));
+    });
+
+    renderBuildings(filteredBuildings);
+}
+
+// ফিল্টার এবং সার্চ ইভেন্ট লিসেনার
+searchInput.addEventListener('input', filterBuildings);
+filterSelect.addEventListener('change', filterBuildings);
 
 // বুকিং ফর্ম মডাল দেখান
 function showBookingForm(buildingName, apartmentType) {
@@ -86,14 +210,6 @@ closeBtn.onclick = () => {
 bookingCloseBtn.onclick = () => {
     bookingModal.style.display = 'none';
 };
-window.onclick = (event) => {
-    if (event.target === modal) {
-        modal.style.display = 'none';
-    }
-    if (event.target === bookingModal) {
-        bookingModal.style.display = 'none';
-    }
-};
 
 // ফর্ম সাবমিট হ্যান্ডলার (Discord-এ পাঠান)
 bookingForm.onsubmit = async (e) => {
@@ -107,7 +223,6 @@ bookingForm.onsubmit = async (e) => {
         apartmentType: document.getElementById('apartment-type').value
     };
 
-    // Discord Webhook-এ পোস্ট করুন
     try {
         const response = await fetch(DISCORD_WEBHOOK_URL, {
             method: 'POST',
@@ -131,4 +246,6 @@ bookingForm.onsubmit = async (e) => {
 };
 
 // পেজ লোড হলে রেন্ডার করুন
-document.addEventListener('DOMContentLoaded', renderBuildings);
+document.addEventListener('DOMContentLoaded', () => {
+    renderBuildings();
+});
