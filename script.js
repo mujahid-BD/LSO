@@ -1,13 +1,13 @@
 // স্যাম্পল ডেটা (এখানে আপনার রিয়েল ডেটা যোগ করুন)
 const buildings = [
     {
-        name: "গ্রিন ভ্যালি টাওয়ার",
+        name: "Occupation Avenue Apt.Complex B",
         image: "https://via.placeholder.com/300x150?text=Green+Valley",
         apartments: [
             {
-                type: "2BHK",
-                storage: "1200 sq ft",
-                capacity: 4,
+                type: "Low-End Apartment",
+                storage: "2500",
+                capacity: 2,
                 available: true,
                 images: [
                     "https://via.placeholder.com/600x400?text=2BHK+Living",
@@ -16,9 +16,9 @@ const buildings = [
                 ]
             },
             {
-                type: "3BHK",
-                storage: "1500 sq ft",
-                capacity: 6,
+                type: "Low-End Apartment",
+                storage: "2500",
+                capacity: 2,
                 available: false,
                 images: [
                     "https://via.placeholder.com/600x400?text=3BHK+Living",
@@ -26,8 +26,8 @@ const buildings = [
                 ]
             },
             {
-                type: "1BHK",
-                storage: "800 sq ft",
+                type: "Low-End Apartment",
+                storage: "2500",
                 capacity: 2,
                 available: true,
                 images: [
@@ -37,13 +37,13 @@ const buildings = [
         ]
     },
     {
-        name: "ব্লু স্কাই অ্যাপার্টমেন্ট",
+        name: "Occupation Avenue Apt.Complex D",
         image: "https://via.placeholder.com/300x150?text=Blue+Sky",
         apartments: [
             {
-                type: "2BHK",
-                storage: "1100 sq ft",
-                capacity: 4,
+                type: "Low-End Apartment",
+                storage: "2500",
+                capacity: 2,
                 available: false,
                 images: [
                     "https://via.placeholder.com/600x400?text=2BHK+Living",
@@ -51,9 +51,9 @@ const buildings = [
                 ]
             },
             {
-                type: "3BHK",
-                storage: "1600 sq ft",
-                capacity: 6,
+                type: "Low-End Apartment",
+                storage: "2500",
+                capacity: 2,
                 available: true,
                 images: [
                     "https://via.placeholder.com/600x400?text=3BHK+Living",
