@@ -27,13 +27,9 @@ const modal = document.getElementById('modal');
 const modalTitle = document.getElementById('modal-title');
 const apartmentsList = document.getElementById('apartments-list');
 const closeBtn = document.querySelector('.close');
-const requestForm = document.getElementById('request-form');
+const bookingModal = document.getElementById('booking-modal');
+const bookingCloseBtn = document.querySelector('.booking-close');
 const bookingForm = document.getElementById('booking-form');
-
-// Information লিঙ্কের জন্য ফাংশন
-function showInfo() {
-    alert('আমাদের কোম্পানি সম্পর্কে তথ্য: আমরা সেরা রিয়েল এস্টেট সলিউশন প্রদান করি। আরও জানতে আমাদের সাথে যোগাযোগ করুন!');
-}
 
 // বিল্ডিং লিস্ট রেন্ডার করুন
 function renderBuildings() {
@@ -47,7 +43,7 @@ function renderBuildings() {
     });
 }
 
-// মডাল ওপেন করুন
+// বিল্ডিং ডিটেইলস মডাল ওপেন করুন
 function openModal(buildingIndex) {
     const building = buildings[buildingIndex];
     modalTitle.textContent = building.name;
@@ -65,28 +61,29 @@ function openModal(buildingIndex) {
         apartmentsList.appendChild(item);
     });
 
-    // ডিফল্টভাবে ফর্ম লুকানো থাকবে
-    requestForm.style.display = 'none';
-
     modal.style.display = 'block';
 }
 
-// বুকিং ফর্ম দেখান
+// বুকিং ফর্ম মডাল দেখান
 function showBookingForm(buildingName, apartmentType) {
-    modalTitle.textContent = `${buildingName} - ${apartmentType}`;
+    document.getElementById('building-name').value = buildingName;
     document.getElementById('apartment-type').value = apartmentType;
-    requestForm.style.display = 'block';
+    bookingModal.style.display = 'block';
 }
 
 // মডাল ক্লোজ করুন
 closeBtn.onclick = () => {
     modal.style.display = 'none';
-    requestForm.style.display = 'none';
+};
+bookingCloseBtn.onclick = () => {
+    bookingModal.style.display = 'none';
 };
 window.onclick = (event) => {
     if (event.target === modal) {
         modal.style.display = 'none';
-        requestForm.style.display = 'none';
+    }
+    if (event.target === bookingModal) {
+        bookingModal.style.display = 'none';
     }
 };
 
@@ -98,7 +95,7 @@ bookingForm.onsubmit = async (e) => {
         email: document.getElementById('email').value,
         phone: document.getElementById('phone').value,
         message: document.getElementById('message').value,
-        building: modalTitle.textContent.split(' - ')[0],
+        building: document.getElementById('building-name').value,
         apartmentType: document.getElementById('apartment-type').value
     };
 
@@ -114,8 +111,8 @@ bookingForm.onsubmit = async (e) => {
         if (response.ok) {
             alert('রিকোয়েস্ট সফলভাবে পাঠানো হয়েছে!');
             bookingForm.reset();
+            bookingModal.style.display = 'none';
             modal.style.display = 'none';
-            requestForm.style.display = 'none';
         } else {
             alert('এরর! আবার চেষ্টা করুন।');
         }
