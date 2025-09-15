@@ -144,7 +144,7 @@ section {
     padding: 20px;
     border: none;
     width: 80%;
-    max-width: 600px;
+    max-width: 800px;
     border-radius: 8px;
 }
 
@@ -161,14 +161,22 @@ section {
 }
 
 #apartments-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
     margin-top: 20px;
 }
 
-.apartment-item {
+.apartment-card {
     background: #f9f9f9;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 4px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.apartment-card p {
+    margin: 5px 0;
 }
 
 .book-btn {
@@ -178,7 +186,7 @@ section {
     padding: 5px 10px;
     border-radius: 4px;
     cursor: pointer;
-    margin-left: 10px;
+    margin-top: 10px;
 }
 
 .book-btn:hover {
@@ -220,5 +228,8 @@ section {
     }
     .notice-text {
         animation-duration: 15s;
+    }
+    #apartments-list {
+        grid-template-columns: 1fr;
     }
 }
