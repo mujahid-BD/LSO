@@ -2,6 +2,7 @@
 const buildings = [
     {
         name: "গ্রিন ভ্যালি টাওয়ার",
+        image: "https://via.placeholder.com/300x150?text=Green+Valley",
         apartments: [
             { type: "2BHK", storage: "1200 sq ft", capacity: 4, available: true },
             { type: "3BHK", storage: "1500 sq ft", capacity: 6, available: false },
@@ -10,6 +11,7 @@ const buildings = [
     },
     {
         name: "ব্লু স্কাই অ্যাপার্টমেন্ট",
+        image: "https://via.placeholder.com/300x150?text=Blue+Sky",
         apartments: [
             { type: "2BHK", storage: "1100 sq ft", capacity: 4, available: false },
             { type: "3BHK", storage: "1600 sq ft", capacity: 6, available: true }
@@ -37,7 +39,11 @@ function renderBuildings() {
     buildings.forEach((building, index) => {
         const card = document.createElement('div');
         card.className = 'building-card';
-        card.innerHTML = `<h3>${building.name}</h3><p>${building.apartments.length} টি অ্যাপার্টমেন্ট</p>`;
+        card.innerHTML = `
+            <img src="${building.image}" alt="${building.name}">
+            <h3>${building.name}</h3>
+            <p>${building.apartments.length} টি অ্যাপার্টমেন্ট</p>
+        `;
         card.onclick = () => openModal(index);
         buildingList.appendChild(card);
     });
