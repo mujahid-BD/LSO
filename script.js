@@ -4,17 +4,17 @@ const buildings = [
         name: "গ্রিন ভ্যালি টাওয়ার",
         image: "https://via.placeholder.com/300x150?text=Green+Valley",
         apartments: [
-            { type: "2BHK", storage: "1200 sq ft", capacity: 4, available: true },
-            { type: "3BHK", storage: "1500 sq ft", capacity: 6, available: false },
-            { type: "1BHK", storage: "800 sq ft", capacity: 2, available: true }
+            { type: "2BHK", storage: "1200 sq ft", capacity: 4, available: true, image: "https://via.placeholder.com/250x120?text=2BHK" },
+            { type: "3BHK", storage: "1500 sq ft", capacity: 6, available: false, image: "https://via.placeholder.com/250x120?text=3BHK" },
+            { type: "1BHK", storage: "800 sq ft", capacity: 2, available: true, image: "https://via.placeholder.com/250x120?text=1BHK" }
         ]
     },
     {
         name: "ব্লু স্কাই অ্যাপার্টমেন্ট",
         image: "https://via.placeholder.com/300x150?text=Blue+Sky",
         apartments: [
-            { type: "2BHK", storage: "1100 sq ft", capacity: 4, available: false },
-            { type: "3BHK", storage: "1600 sq ft", capacity: 6, available: true }
+            { type: "2BHK", storage: "1100 sq ft", capacity: 4, available: false, image: "https://via.placeholder.com/250x120?text=2BHK" },
+            { type: "3BHK", storage: "1600 sq ft", capacity: 6, available: true, image: "https://via.placeholder.com/250x120?text=3BHK" }
         ]
     }
     // আরও বিল্ডিং যোগ করুন
@@ -59,6 +59,7 @@ function openModal(buildingIndex) {
         const card = document.createElement('div');
         card.className = 'apartment-card';
         card.innerHTML = `
+            <img src="${apt.image}" alt="${apt.type}">
             <p><strong>টাইপ:</strong> ${apt.type}</p>
             <p><strong>স্টোরেজ:</strong> ${apt.storage}</p>
             <p><strong>ক্যাপাসিটি:</strong> ${apt.capacity} জন</p>
