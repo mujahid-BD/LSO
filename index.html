@@ -8,6 +8,14 @@
 </head>
 <body>
     <header>
+        <nav>
+            <ul>
+                <li><a href="#buildings">Home</a></li>
+                <li><a href="#staff">Employee</a></li>
+                <li><a href="#" onclick="showInfo()">Information</a></li>
+                <li><a href="YOUR_DISCORD_INVITE_LINK_HERE" target="_blank" class="discord-btn">Join Discord</a></li>
+            </ul>
+        </nav>
         <h1>আমাদের রিয়েল এস্টেট কোম্পানি</h1>
         <p>সেরা বাসা-ঘরের সমাধান</p>
     </header>
@@ -49,6 +57,7 @@
             <input type="email" id="email" placeholder="ইমেইল" required>
             <input type="tel" id="phone" placeholder="ফোন নম্বর" required>
             <textarea id="message" placeholder="আপনার মেসেজ" required></textarea>
+            <input type="hidden" id="apartment-type" value="">
             <button type="submit">সাবমিট করুন</button>
         </form>
     </div>
