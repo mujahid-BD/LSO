@@ -65,6 +65,28 @@ const buildings = [
     }
 ];
 
+// অফার ডেটা
+const offers = [
+    {
+        title: "১০% ডিসকাউন্ট অফার",
+        description: "প্রথম মাসের ভাড়ায় ১০% ডিসকাউন্ট পান! শুধুমাত্র এই মাসের জন্য।",
+        image: "https://via.placeholder.com/600x200?text=Discount+Offer",
+        link: "#buildings"
+    },
+    {
+        title: "ফ্রি পার্কিং প্যাকেজ",
+        description: "নতুন বুকিংয়ে ১ বছরের জন্য ফ্রি পার্কিং পান।",
+        image: "https://via.placeholder.com/600x200?text=Free+Parking",
+        link: "#buildings"
+    },
+    {
+        title: "বিশেষ ফ্যামিলি প্যাকেজ",
+        description: "৩বিএইচকে অ্যাপার্টমেন্টে বিশেষ ছাড়। এখনই বুক করুন!",
+        image: "https://via.placeholder.com/600x200?text=Family+Package",
+        link: "#buildings"
+    }
+];
+
 // Discord Webhook URL (আপনারটা পেস্ট করুন)
 const DISCORD_WEBHOOK_URL = 'YOUR_WEBHOOK_URL_HERE'; // এটি চেঞ্জ করুন!
 
@@ -84,10 +106,16 @@ const lightboxPrev = document.querySelector('.lightbox-prev');
 const lightboxNext = document.querySelector('.lightbox-next');
 const searchInput = document.getElementById('search-input');
 const filterSelect = document.getElementById('filter-select');
+const offerList = document.getElementById('offer-list');
+const carouselPrev = document.querySelector('.carousel-prev');
+const carouselNext = document.querySelector('.carousel-next');
 
 // লাইটবক্স ভেরিয়েবল
 let currentImages = [];
 let currentImageIndex = 0;
+
+// ক্যারোজেল ভেরিয়েবল
+let currentOfferIndex = 0;
 
 // বিল্ডিং লিস্ট রেন্ডার করুন
 function renderBuildings(filteredBuildings = buildings) {
@@ -104,6 +132,46 @@ function renderBuildings(filteredBuildings = buildings) {
         buildingList.appendChild(card);
     });
 }
+
+// অফার লিস্ট রেন্ডার করুন
+function renderOffers() {
+    offerList.innerHTML = '';
+    offers.forEach((offer, index) => {
+        const card = document.createElement('div');
+        card.className = 'offer-card';
+        card.style.transform = `translateX(${-index * 100}%)`;
+        card.innerHTML = `
+            <img src="${offer.image}" alt="${offer.title}">
+            <h3>${offer.title}</h3>
+            <p>${offer.description}</p>
+            <a href="${offer.link}" class="offer-btn">এখনই বুক করুন</a>
+        `;
+        offerList.appendChild(card);
+    });
+    updateCarousel();
+}
+
+// ক্যারোজেল আপডেট করুন
+function updateCarousel() {
+    offerList.style.transform = `translateX(-${currentOfferIndex * 100}%)`;
+}
+
+// ক্যারোজেল নেভিগেশন
+carouselPrev.onclick = () => {
+    currentOfferIndex = (currentOfferIndex - 1 + offers.length) % offers.length;
+    updateCarousel();
+};
+
+carouselNext.onclick = () => {
+    currentOfferIndex = (currentOfferIndex + 1) % offers.length;
+    updateCarousel();
+};
+
+// স্বয়ংক্রিয় ক্যারোজেল
+setInterval(() => {
+    currentOfferIndex = (currentOfferIndex + 1) % offers.length;
+    updateCarousel();
+}, 5000);
 
 // বিল্ডিং ডিটেইলস মডাল ওপেন করুন
 function openModal(buildingIndex) {
@@ -248,4 +316,5 @@ bookingForm.onsubmit = async (e) => {
 // পেজ লোড হলে রেন্ডার করুন
 document.addEventListener('DOMContentLoaded', () => {
     renderBuildings();
+    renderOffers();
 });
