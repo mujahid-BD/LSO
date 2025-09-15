@@ -30,6 +30,11 @@ const closeBtn = document.querySelector('.close');
 const requestForm = document.getElementById('request-form');
 const bookingForm = document.getElementById('booking-form');
 
+// Information লিঙ্কের জন্য ফাংশন
+function showInfo() {
+    alert('আমাদের কোম্পানি সম্পর্কে তথ্য: আমরা সেরা রিয়েল এস্টেট সলিউশন প্রদান করি। আরও জানতে আমাদের সাথে যোগাযোগ করুন!');
+}
+
 // বিল্ডিং লিস্ট রেন্ডার করুন
 function renderBuildings() {
     buildingList.innerHTML = '';
@@ -48,29 +53,41 @@ function openModal(buildingIndex) {
     modalTitle.textContent = building.name;
     apartmentsList.innerHTML = '';
 
-    let hasAvailable = false;
-    building.apartments.forEach(apt => {
+    building.apartments.forEach((apt, aptIndex) => {
         const item = document.createElement('div');
         item.className = 'apartment-item';
         item.innerHTML = `
             <strong>টাইপ:</strong> ${apt.type} | <strong>স্টোরেজ:</strong> ${apt.storage} | 
             <strong>ক্যাপাসিটি:</strong> ${apt.capacity} জন | 
             <strong>স্ট্যাটাস:</strong> <span style="color: ${apt.available ? 'green' : 'red'}">${apt.available ? 'Available' : 'Not Available'}</span>
+            ${apt.available ? `<button class="book-btn" onclick="showBookingForm('${building.name}', '${apt.type}')">Book Now</button>` : ''}
         `;
-        if (apt.available) hasAvailable = true;
         apartmentsList.appendChild(item);
     });
 
-    // যদি কোনো Available থাকে, ফর্ম দেখান
-    requestForm.style.display = hasAvailable ? 'block' : 'none';
+    // ডিফল্টভাবে ফর্ম লুকানো থাকবে
+    requestForm.style.display = 'none';
 
     modal.style.display = 'block';
 }
 
+// বুকিং ফর্ম দেখান
+function showBookingForm(buildingName, apartmentType) {
+    modalTitle.textContent = `${buildingName} - ${apartmentType}`;
+    document.getElementById('apartment-type').value = apartmentType;
+    requestForm.style.display = 'block';
+}
+
 // মডাল ক্লোজ করুন
-closeBtn.onclick = () => modal.style.display = 'none';
+closeBtn.onclick = () => {
+    modal.style.display = 'none';
+    requestForm.style.display = 'none';
+};
 window.onclick = (event) => {
-    if (event.target === modal) modal.style.display = 'none';
+    if (event.target === modal) {
+        modal.style.display = 'none';
+        requestForm.style.display = 'none';
+    }
 };
 
 // ফর্ম সাবমিট হ্যান্ডলার (Discord-এ পাঠান)
@@ -81,7 +98,8 @@ bookingForm.onsubmit = async (e) => {
         email: document.getElementById('email').value,
         phone: document.getElementById('phone').value,
         message: document.getElementById('message').value,
-        building: modalTitle.textContent
+        building: modalTitle.textContent.split(' - ')[0],
+        apartmentType: document.getElementById('apartment-type').value
     };
 
     // Discord Webhook-এ পোস্ট করুন
@@ -90,12 +108,14 @@ bookingForm.onsubmit = async (e) => {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
-                content: `নতুন বুকিং রিকোয়েস্ট!\n**বিল্ডিং:** ${formData.building}\n**নাম:** ${formData.name}\n**ইমেইল:** ${formData.email}\n**ফোন:** ${formData.phone}\n**মেসেজ:** ${formData.message}`
+                content: `নতুন বুকিং রিকোয়েস্ট!\n**বিল্ডিং:** ${formData.building}\n**অ্যাপার্টমেন্ট টাইপ:** ${formData.apartmentType}\n**নাম:** ${formData.name}\n**ইমেইল:** ${formData.email}\n**ফোন:** ${formData.phone}\n**মেসেজ:** ${formData.message}`
             })
         });
         if (response.ok) {
             alert('রিকোয়েস্ট সফলভাবে পাঠানো হয়েছে!');
             bookingForm.reset();
+            modal.style.display = 'none';
+            requestForm.style.display = 'none';
         } else {
             alert('এরর! আবার চেষ্টা করুন।');
         }
