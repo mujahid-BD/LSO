@@ -22,9 +22,9 @@ const employees = [
         image: "images/employee3.jpg"
     },
     {
-        name: "Shelby",
+        name: "Jaxon Foaster",
         position: "Agent",
-        phone: "528-1062",
+        phone: "217-7116",
         image: "images/employee3.jpg"
     }
 ];
