@@ -1,0 +1,67 @@
+{
+  "buildings": [
+    {
+      "name": "গ্রিন ভ্যালি টাওয়ার",
+      "image": "https://via.placeholder.com/300x150?text=Green+Valley",
+      "apartments": [
+        {
+          "type": "2BHK",
+          "storage": "1200 sq ft",
+          "capacity": 4,
+          "available": true,
+          "images": [
+            "https://via.placeholder.com/600x400?text=2BHK+Living",
+            "https://via.placeholder.com/600x400?text=2BHK+Kitchen",
+            "https://via.placeholder.com/600x400?text=2BHK+Bedroom"
+          ]
+        },
+        {
+          "type": "3BHK",
+          "storage": "1500 sq ft",
+          "capacity": 6,
+          "available": false,
+          "images": [
+            "https://via.placeholder.com/600x400?text=3BHK+Living",
+            "https://via.placeholder.com/600x400?text=3BHK+Kitchen"
+          ]
+        },
+        {
+          "type": "1BHK",
+          "storage": "800 sq ft",
+          "capacity": 2,
+          "available": true,
+          "images": [
+            "https://via.placeholder.com/600x400?text=1BHK+Living"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ব্লু স্কাই অ্যাপার্টমেন্ট",
+      "image": "https://via.placeholder.com/300x150?text=Blue+Sky",
+      "apartments": [
+        {
+          "type": "2BHK",
+          "storage": "1100 sq ft",
+          "capacity": 4,
+          "available": false,
+          "images": [
+            "https://via.placeholder.com/600x400?text=2BHK+Living",
+            "https://via.placeholder.com/600x400?text=2BHK+Bedroom"
+          ]
+        },
+        {
+          "type": "3BHK",
+          "storage": "1600 sq ft",
+          "capacity": 6,
+          "available": true,
+          "images": [
+            "https://via.placeholder.com/600x400?text=3BHK+Living",
+            "https://via.placeholder.com/600x400?text=3BHK+Balcony",
+            "https://via.placeholder.com/600x400?text=3BHK+Kitchen"
+          ]
+        }
+      ]
+    }
+  ]
+}
