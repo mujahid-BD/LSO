@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>আমাদের টিম</title>
+    <title>আমাদের কর্মীরা</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,36 +12,26 @@
             <nav class="nav-left">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="employee.html">Employee</a></li>
+                    <li><a href="#staff">Employee</a></li>
                     <li><a href="information.html">Information</a></li>
                     <li><a href="YOUR_DISCORD_INVITE_LINK_HERE" target="_blank" class="discord-btn">Join Discord</a></li>
                 </ul>
             </nav>
             <div class="header-title">
-                <h1>Los Santos Organisation</h1>
-                <p>আমাদের দক্ষ কর্মীদের সাথে পরিচিত হন</p>
+                <h1>আমাদের কর্মীরা</h1>
+                <p>আমাদের টিমের সদস্যদের সাথে পরিচিত হন</p>
             </div>
-            <div class="search-filter-container"></div>
+            <div class="search-filter-container">
+                <!-- এখানে ফিল্টার/সার্চ যোগ করতে চাইলে বলুন -->
+            </div>
         </div>
     </header>
 
     <section id="staff">
-        <h2>Meet Our Team</h2>
-        <div class="staff-grid">
-            <div class="staff-card">
-                <img src="https://via.placeholder.com/100?text=John" alt="জন ডো">
-                <h3>জন ডো</h3>
-                <h3>সেলস ম্যানেজার</h3>
-                <p>ইমেইল: john@example.com | ফোন: 01xxxxxxxxx</p>
-            </div>
-            <div class="staff-card">
-                <img src="https://via.placeholder.com/100?text=Jane" alt="জেন স্মিথ">
-                <h3>জেন স্মিথ</h3>
-                <h3>মার্কেটিং হেড</h3>
-                <p>ইমেইল: jane@example.com | ফোন: 01xxxxxxxxx</p>
-            </div>
-            <!-- আরও স্টাফ যোগ করুন -->
-        </div>
+        <h2>আমাদের টিম</h2>
+        <div id="staff-list" class="staff-grid"></div>
     </section>
+
+    <script src="employee.js"></script>
 </body>
 </html>
