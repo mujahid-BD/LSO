@@ -1,64 +1,94 @@
 {
   "buildings": [
     {
-      "name": "গ্রিন ভ্যালি টাওয়ার",
-      "image": "https://via.placeholder.com/300x150?text=Green+Valley",
+      "name": "Occupation Avenue Apt.Complex B",
+      "image": "images/Occupation Avenue B.jpg",
       "apartments": [
         {
-          "type": "2BHK",
-          "storage": "1200 sq ft",
-          "capacity": 4,
-          "available": true,
-          "images": [
-            "https://via.placeholder.com/600x400?text=2BHK+Living",
-            "https://via.placeholder.com/600x400?text=2BHK+Kitchen",
-            "https://via.placeholder.com/600x400?text=2BHK+Bedroom"
-          ]
-        },
-        {
-          "type": "3BHK",
-          "storage": "1500 sq ft",
-          "capacity": 6,
-          "available": false,
-          "images": [
-            "https://via.placeholder.com/600x400?text=3BHK+Living",
-            "https://via.placeholder.com/600x400?text=3BHK+Kitchen"
-          ]
-        },
-        {
-          "type": "1BHK",
-          "storage": "800 sq ft",
+          "type": "Low-End Apartment",
+          "storage": "2500",
           "capacity": 2,
           "available": true,
           "images": [
-            "https://via.placeholder.com/600x400?text=1BHK+Living"
+            "images/2bhk_living.jpg"
+          ]
+        },
+        {
+          "type": "Low-End Apartment",
+          "storage": "2500",
+          "capacity": 2,
+          "available": false,
+          "images": [
+            "images/3bhk_living.jpg"
+          ]
+        },
+        {
+          "type": "Low-End Apartment",
+          "storage": "2500",
+          "capacity": 2,
+          "available": true,
+          "images": [
+            "images/1bhk_living.jpg"
+          ]
+        },
+        {
+          "type": "Low-End Apartment",
+          "storage": "2500",
+          "capacity": 2,
+          "available": true,
+          "images": [
+            "images/1bhk_living.jpg"
           ]
         }
       ]
     },
     {
-      "name": "ব্লু স্কাই অ্যাপার্টমেন্ট",
-      "image": "https://via.placeholder.com/300x150?text=Blue+Sky",
+      "name": "Occupation Avenue Apt.Complex D",
+      "image": "images/Occupation Avenue D.jpg",
       "apartments": [
         {
-          "type": "2BHK",
-          "storage": "1100 sq ft",
-          "capacity": 4,
+          "type": "Low-End Apartment",
+          "storage": "2500",
+          "capacity": 2,
           "available": false,
           "images": [
-            "https://via.placeholder.com/600x400?text=2BHK+Living",
-            "https://via.placeholder.com/600x400?text=2BHK+Bedroom"
+            "images/2bhk_living_blue.jpg"
           ]
         },
         {
-          "type": "3BHK",
-          "storage": "1600 sq ft",
-          "capacity": 6,
+          "type": "Low-End Apartment",
+          "storage": "2500",
+          "capacity": 2,
           "available": true,
           "images": [
-            "https://via.placeholder.com/600x400?text=3BHK+Living",
-            "https://via.placeholder.com/600x400?text=3BHK+Balcony",
-            "https://via.placeholder.com/600x400?text=3BHK+Kitchen"
+            "images/3bhk_living_blue.jpg"
+          ]
+        },
+        {
+          "type": "Low-End Apartment",
+          "storage": "2500",
+          "capacity": 2,
+          "available": true,
+          "images": [
+            "images/1bhk_living.jpg"
+          ]
+        },
+        {
+          "type": "Low-End Apartment",
+          "storage": "2500",
+          "capacity": 2,
+          "available": true,
+          "images": [
+            "images/1bhk_living.jpg"
+          ]
+        },
+        {
+          "type": "Low-End Apartment",
+          "storage": "2500",
+          "capacity": 2,
+          "available": true,
+          "images": [
+            "images/1bhk_living.jpg"
           ]
         }
       ]
