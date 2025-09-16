@@ -94,87 +94,6 @@ section {
     margin: 0 auto;
 }
 
-/* অফার সেকশন স্টাইল */
-#offers {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    margin-bottom: 20px;
-}
-
-.offer-carousel {
-    position: relative;
-    overflow: hidden;
-}
-
-.offer-list {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.offer-card {
-    flex: 0 0 100%;
-    text-align: center;
-    padding: 20px;
-}
-
-.offer-card img {
-    width: 100%;
-    max-height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 10px;
-}
-
-.offer-card h3 {
-    margin: 10px 0;
-    font-size: 20px;
-}
-
-.offer-card p {
-    margin: 10px 0;
-    color: #555;
-}
-
-.offer-btn {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.offer-btn:hover {
-    background-color: #45a049;
-}
-
-.carousel-prev, .carousel-next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0,0,0,0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 24px;
-    border-radius: 4px;
-}
-
-.carousel-prev {
-    left: 10px;
-}
-
-.carousel-next {
-    right: 10px;
-}
-
-.carousel-prev:hover, .carousel-next:hover {
-    background-color: rgba(0,0,0,0.7);
-}
-
 #building-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -450,8 +369,5 @@ section {
     }
     #apartments-list {
         grid-template-columns: 1fr;
-    }
-    .offer-card img {
-        max-height: 150px;
     }
 }
