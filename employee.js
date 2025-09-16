@@ -4,18 +4,27 @@ const staffList = document.getElementById('staff-list');
 // কর্মীদের তথ্য (হার্ডকোড করা)
 const employees = [
     {
-        name: "আহমেদ রহিম",
-        position: "ম্যানেজার",
-        image: "images/employee1.jpg"
+        name: "Atif Ayan",
+        position: "Owner",
+        phone: "839-9009",
+        image: "images/atif.jpg"
     },
     {
-        name: "সারা খান",
-        position: "সেলস এক্সিকিউটিভ",
-        image: "images/employee2.jpg"
+        name: "Mofiz Mia",
+        position: "Manager",
+        phone: "297-4572",
+        image: "images/mofiz.jpg"
     },
     {
-        name: "রাকিব হোসেন",
-        position: "কাস্টমার সাপোর্ট",
+        name: "Saniyat Shelby",
+        position: "Agent Head",
+        phone: "528-1062",
+        image: "images/employee3.jpg"
+    },
+    {
+        name: "Shelby",
+        position: "Agent",
+        phone: "528-1062",
         image: "images/employee3.jpg"
     }
 ];
