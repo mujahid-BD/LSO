@@ -2,7 +2,7 @@
 const buildings = [
     {
         name: "Occupation Avenue Apt.Complex B",
-        image: "https://via.placeholder.com/300x150?text=Green+Valley",
+        image: "image/Occupation Avenue B.jpg",
         apartments: [
             {
                 type: "Low-End Apartment",
@@ -38,7 +38,7 @@ const buildings = [
     },
     {
         name: "Occupation Avenue Apt.Complex D",
-        image: "https://via.placeholder.com/300x150?text=Blue+Sky",
+        image: "image/Occupation Avenue D.jpg",
         apartments: [
             {
                 type: "Low-End Apartment",
