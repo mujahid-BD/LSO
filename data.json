@@ -325,8 +325,134 @@
       ]
     },
     {
-      "name": "Occupation Avenue Apt.Complex D",
-      "image": "images/Occupation Avenue D.jpg",
+      "name": "Cougar Avenue",
+      "image": "images/Cougar Avenue.jpg",
+      "apartments": [
+        {
+          "type": "Mid-End Apartment(House)",
+          "storage": "5000",
+          "capacity": 4,
+          "available": false,
+          "images": [
+            "images/2bhk_living_blue.jpg"
+          ]
+        },
+        {
+          "type": "Michael's Mansion",
+          "storage": "10000",
+          "capacity": 4,
+          "available": true,
+          "images": [
+            "images/3bhk_living_blue.jpg"
+          ]
+        },
+        {
+          "type": "Trevor's Beach House",
+          "storage": "6000",
+          "capacity": 4,
+          "available": true,
+          "images": [
+            "images/1bhk_living.jpg"
+          ]
+        },
+        {
+          "type": "Trevor's Beach House",
+          "storage": "6000",
+          "capacity": 4,
+          "available": true,
+          "images": [
+            "images/1bhk_living.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Greenwich Place",
+      "image": "images/Greenwich Place.jpg",
+      "apartments": [
+        {
+          "type": "High-End Apartment",
+          "storage": "10000",
+          "capacity": 5,
+          "available": false,
+          "images": [
+            "images/2bhk_living_blue.jpg"
+          ]
+        },
+        {
+          "type": "Michael's Mansion",
+          "storage": "10000",
+          "capacity": 4,
+          "available": true,
+          "images": [
+            "images/3bhk_living_blue.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Vespucci Boulevard Apt.Complex B",
+      "image": "images/Vespucci Boulevard B.jpg",
+      "apartments": [
+        {
+          "type": "Trevor's Beach House",
+          "storage": "6000",
+          "capacity": 4,
+          "available": false,
+          "images": [
+            "images/2bhk_living_blue.jpg"
+          ]
+        },
+        {
+          "type": "Trevor's Beach House",
+          "storage": "6000",
+          "capacity": 4,
+          "available": true,
+          "images": [
+            "images/3bhk_living_blue.jpg"
+          ]
+        },
+        {
+          "type": "Trevor's Beach House",
+          "storage": "6000",
+          "capacity": 4,
+          "available": true,
+          "images": [
+            "images/1bhk_living.jpg"
+          ]
+        },
+        {
+          "type": "Trevor's Beach House",
+          "storage": "6000",
+          "capacity": 4,
+          "available": true,
+          "images": [
+            "images/1bhk_living.jpg"
+          ]
+        },
+        {
+          "type": "Trevor's Beach House",
+          "storage": "6000",
+          "capacity": 4,
+          "available": true,
+          "images": [
+            "images/1bhk_living.jpg"
+          ]
+        },
+        {
+          "type": "Trevor's Beach House",
+          "storage": "6000",
+          "capacity": 4,
+          "available": true,
+          "images": [
+            "images/1bhk_living.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Del Perro Boulevard",
+      "image": "images/Del Perro Boulevard.jpg",
       "apartments": [
         {
           "type": "Low-End Apartment",
@@ -344,6 +470,69 @@
           "available": true,
           "images": [
             "images/3bhk_living_blue.jpg"
+          ]
+        },
+        {
+          "type": "Low-End Apartment",
+          "storage": "2500",
+          "capacity": 2,
+          "available": true,
+          "images": [
+            "images/1bhk_living.jpg"
+          ]
+        },
+        {
+          "type": "Low-End Apartment",
+          "storage": "2500",
+          "capacity": 2,
+          "available": true,
+          "images": [
+            "images/1bhk_living.jpg"
+          ]
+        },
+        {
+          "type": "Low-End Apartment",
+          "storage": "2500",
+          "capacity": 2,
+          "available": true,
+          "images": [
+            "images/1bhk_living.jpg"
+          ]
+        },
+        {
+          "type": "Low-End Apartment",
+          "storage": "2500",
+          "capacity": 2,
+          "available": true,
+          "images": [
+            "images/1bhk_living.jpg"
+          ]
+        },
+        {
+          "type": "Low-End Apartment",
+          "storage": "2500",
+          "capacity": 2,
+          "available": true,
+          "images": [
+            "images/1bhk_living.jpg"
+          ]
+        },
+        {
+          "type": "Low-End Apartment",
+          "storage": "2500",
+          "capacity": 2,
+          "available": true,
+          "images": [
+            "images/1bhk_living.jpg"
+          ]
+        },
+        {
+          "type": "Low-End Apartment",
+          "storage": "2500",
+          "capacity": 2,
+          "available": true,
+          "images": [
+            "images/1bhk_living.jpg"
           ]
         },
         {
@@ -376,8 +565,8 @@
       ]
     },
     {
-      "name": "Occupation Avenue Apt.Complex D",
-      "image": "images/Occupation Avenue D.jpg",
+      "name": "Bay City Avenue Apt. Complex A",
+      "image": "images/Bay City Avenue A.jpg",
       "apartments": [
         {
           "type": "Low-End Apartment",
@@ -395,6 +584,51 @@
           "available": true,
           "images": [
             "images/3bhk_living_blue.jpg"
+          ]
+        },
+        {
+          "type": "Low-End Apartment",
+          "storage": "2500",
+          "capacity": 2,
+          "available": true,
+          "images": [
+            "images/1bhk_living.jpg"
+          ]
+        },
+        {
+          "type": "Low-End Apartment",
+          "storage": "2500",
+          "capacity": 2,
+          "available": true,
+          "images": [
+            "images/1bhk_living.jpg"
+          ]
+        },
+        {
+          "type": "Low-End Apartment",
+          "storage": "2500",
+          "capacity": 2,
+          "available": true,
+          "images": [
+            "images/1bhk_living.jpg"
+          ]
+        },
+        {
+          "type": "Low-End Apartment",
+          "storage": "2500",
+          "capacity": 2,
+          "available": true,
+          "images": [
+            "images/1bhk_living.jpg"
+          ]
+        },
+        {
+          "type": "Low-End Apartment",
+          "storage": "2500",
+          "capacity": 2,
+          "available": true,
+          "images": [
+            "images/1bhk_living.jpg"
           ]
         },
         {
@@ -427,202 +661,184 @@
       ]
     },
     {
-      "name": "Occupation Avenue Apt.Complex D",
-      "image": "images/Occupation Avenue D.jpg",
+      "name": "Grove Street",
+      "image": "images/Grove Street.jpg",
       "apartments": [
         {
-          "type": "Low-End Apartment",
-          "storage": "2500",
-          "capacity": 2,
+           "type": "Mid-End Apartment(House)",
+          "storage": "5000",
+          "capacity": 4,
           "available": false,
           "images": [
             "images/2bhk_living_blue.jpg"
           ]
         },
         {
-          "type": "Low-End Apartment",
-          "storage": "2500",
-          "capacity": 2,
+           "type": "Mid-End Apartment(House)",
+          "storage": "5000",
+          "capacity": 4,
           "available": true,
           "images": [
             "images/3bhk_living_blue.jpg"
           ]
         },
         {
-          "type": "Low-End Apartment",
-          "storage": "2500",
-          "capacity": 2,
+           "type": "Mid-End Apartment(House)",
+          "storage": "5000",
+          "capacity": 4,
           "available": true,
           "images": [
             "images/1bhk_living.jpg"
           ]
         },
         {
-          "type": "Low-End Apartment",
-          "storage": "2500",
-          "capacity": 2,
+           "type": "Mid-End Apartment(House)",
+          "storage": "5000",
+          "capacity": 4,
           "available": true,
           "images": [
             "images/1bhk_living.jpg"
           ]
         },
         {
-          "type": "Low-End Apartment",
-          "storage": "2500",
-          "capacity": 2,
-          "available": true,
-          "images": [
-            "images/1bhk_living.jpg"
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Occupation Avenue Apt.Complex D",
-      "image": "images/Occupation Avenue D.jpg",
-      "apartments": [
-        {
-          "type": "Low-End Apartment",
-          "storage": "2500",
-          "capacity": 2,
-          "available": false,
-          "images": [
-            "images/2bhk_living_blue.jpg"
-          ]
-        },
-        {
-          "type": "Low-End Apartment",
-          "storage": "2500",
-          "capacity": 2,
-          "available": true,
-          "images": [
-            "images/3bhk_living_blue.jpg"
-          ]
-        },
-        {
-          "type": "Low-End Apartment",
-          "storage": "2500",
-          "capacity": 2,
+           "type": "Mid-End Apartment(House)",
+          "storage": "5000",
+          "capacity": 4,
           "available": true,
           "images": [
             "images/1bhk_living.jpg"
           ]
         },
         {
-          "type": "Low-End Apartment",
-          "storage": "2500",
-          "capacity": 2,
+           "type": "Mid-End Apartment(House)",
+          "storage": "5000",
+          "capacity": 4,
           "available": true,
           "images": [
             "images/1bhk_living.jpg"
           ]
         },
         {
-          "type": "Low-End Apartment",
-          "storage": "2500",
-          "capacity": 2,
-          "available": true,
-          "images": [
-            "images/1bhk_living.jpg"
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Occupation Avenue Apt.Complex D",
-      "image": "images/Occupation Avenue D.jpg",
-      "apartments": [
-        {
-          "type": "Low-End Apartment",
-          "storage": "2500",
-          "capacity": 2,
-          "available": false,
-          "images": [
-            "images/2bhk_living_blue.jpg"
-          ]
-        },
-        {
-          "type": "Low-End Apartment",
-          "storage": "2500",
-          "capacity": 2,
-          "available": true,
-          "images": [
-            "images/3bhk_living_blue.jpg"
-          ]
-        },
-        {
-          "type": "Low-End Apartment",
-          "storage": "2500",
-          "capacity": 2,
+           "type": "Mid-End Apartment(House)",
+          "storage": "5000",
+          "capacity": 4,
           "available": true,
           "images": [
             "images/1bhk_living.jpg"
           ]
         },
         {
-          "type": "Low-End Apartment",
-          "storage": "2500",
-          "capacity": 2,
+           "type": "Mid-End Apartment(House)",
+          "storage": "5000",
+          "capacity": 4,
           "available": true,
           "images": [
             "images/1bhk_living.jpg"
           ]
         },
         {
-          "type": "Low-End Apartment",
-          "storage": "2500",
-          "capacity": 2,
-          "available": true,
-          "images": [
-            "images/1bhk_living.jpg"
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Occupation Avenue Apt.Complex D",
-      "image": "images/Occupation Avenue D.jpg",
-      "apartments": [
-        {
-          "type": "Low-End Apartment",
-          "storage": "2500",
-          "capacity": 2,
-          "available": false,
-          "images": [
-            "images/2bhk_living_blue.jpg"
-          ]
-        },
-        {
-          "type": "Low-End Apartment",
-          "storage": "2500",
-          "capacity": 2,
-          "available": true,
-          "images": [
-            "images/3bhk_living_blue.jpg"
-          ]
-        },
-        {
-          "type": "Low-End Apartment",
-          "storage": "2500",
-          "capacity": 2,
+           "type": "Mid-End Apartment(House)",
+          "storage": "5000",
+          "capacity": 4,
           "available": true,
           "images": [
             "images/1bhk_living.jpg"
           ]
         },
         {
-          "type": "Low-End Apartment",
-          "storage": "2500",
-          "capacity": 2,
+           "type": "Mid-End Apartment(House)",
+          "storage": "5000",
+          "capacity": 4,
           "available": true,
           "images": [
             "images/1bhk_living.jpg"
           ]
         },
         {
-          "type": "Low-End Apartment",
-          "storage": "2500",
-          "capacity": 2,
+           "type": "Mid-End Apartment(House)",
+          "storage": "5000",
+          "capacity": 4,
+          "available": true,
+          "images": [
+            "images/1bhk_living.jpg"
+          ]
+        },
+        {
+           "type": "Mid-End Apartment(House)",
+          "storage": "5000",
+          "capacity": 4,
+          "available": true,
+          "images": [
+            "images/1bhk_living.jpg"
+          ]
+        },
+        {
+           "type": "Mid-End Apartment(House)",
+          "storage": "5000",
+          "capacity": 4,
+          "available": true,
+          "images": [
+            "images/1bhk_living.jpg"
+          ]
+        },
+        {
+           "type": "Mid-End Apartment(House)",
+          "storage": "5000",
+          "capacity": 4,
+          "available": true,
+          "images": [
+            "images/1bhk_living.jpg"
+          ]
+        },
+        {
+           "type": "Mid-End Apartment(House)",
+          "storage": "5000",
+          "capacity": 4,
+          "available": true,
+          "images": [
+            "images/1bhk_living.jpg"
+          ]
+        },
+        {
+           "type": "Mid-End Apartment(House)",
+          "storage": "5000",
+          "capacity": 4,
+          "available": true,
+          "images": [
+            "images/1bhk_living.jpg"
+          ]
+        },
+        {
+           "type": "Mid-End Apartment(House)",
+          "storage": "5000",
+          "capacity": 4,
+          "available": true,
+          "images": [
+            "images/1bhk_living.jpg"
+          ]
+        },
+        {
+           "type": "Mid-End Apartment(House)",
+          "storage": "5000",
+          "capacity": 4,
+          "available": true,
+          "images": [
+            "images/1bhk_living.jpg"
+          ]
+        },
+        {
+           "type": "Mid-End Apartment(House)",
+          "storage": "5000",
+          "capacity": 4,
+          "available": true,
+          "images": [
+            "images/1bhk_living.jpg"
+          ]
+        },
+        {
+           "type": "Mid-End Apartment(House)",
+          "storage": "5000",
+          "capacity": 4,
           "available": true,
           "images": [
             "images/1bhk_living.jpg"
