@@ -38,8 +38,8 @@ function renderEmployees() {
         card.innerHTML = `
             <img src="${employee.image}" alt="${employee.name}" loading="lazy">
             <h3>${employee.name}</h3>
-            <p>${employee.position}</p>
-            <p>${employee.phone}</p>
+            <p><strong>পদবি:</strong> ${employee.position}</p>
+            <p><strong>ফোন:</strong> ${employee.phone}</p>
         `;
         staffList.appendChild(card);
     });
