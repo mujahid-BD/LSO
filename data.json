@@ -8,7 +8,7 @@
           "type": "Low-End Apartment",
           "storage": "2500",
           "capacity": 2,
-          "available": true,
+          "available": false,
           "images": [
             "images/2bhk_living.jpg"
           ]
@@ -26,7 +26,7 @@
           "type": "Low-End Apartment",
           "storage": "2500",
           "capacity": 2,
-          "available": true,
+          "available": false,
           "images": [
             "images/1bhk_living.jpg"
           ]
@@ -59,7 +59,7 @@
           "type": "Low-End Apartment",
           "storage": "2500",
           "capacity": 2,
-          "available": true,
+          "available": false,
           "images": [
             "images/3bhk_living_blue.jpg"
           ]
@@ -86,7 +86,7 @@
           "type": "Low-End Apartment",
           "storage": "2500",
           "capacity": 2,
-          "available": true,
+          "available": false,
           "images": [
             "images/1bhk_living.jpg"
           ]
@@ -101,7 +101,7 @@
           "type": "Franklin's Mansion",
           "storage": "10000",
           "capacity": 4,
-          "available": false,
+          "available": true,
           "images": [
             "images/2bhk_living_blue.jpg"
           ]
@@ -110,7 +110,7 @@
           "type": "High-End Apartment",
           "storage": "10000",
           "capacity": 5,
-          "available": true,
+          "available": false,
           "images": [
             "images/3bhk_living_blue.jpg"
           ]
@@ -119,7 +119,7 @@
           "type": "Mid-End Apartment(House)",
           "storage": "5000",
           "capacity": 4,
-          "available": true,
+          "available": false,
           "images": [
             "images/1bhk_living.jpg"
           ]
@@ -128,7 +128,7 @@
           "type": "Franklin's Mansion",
           "storage": "10000",
           "capacity": 4,
-          "available": true,
+          "available": false,
           "images": [
             "images/1bhk_living.jpg"
           ]
@@ -143,7 +143,7 @@
           "type": "Michael's Mansion",
           "storage": "10000",
           "capacity": 4,
-          "available": false,
+          "available": true,
           "images": [
             "images/2bhk_living_blue.jpg"
           ]
@@ -152,7 +152,7 @@
           "type": "Trevor's Beach House",
           "storage": "6000",
           "capacity": 4,
-          "available": true,
+          "available": false,
           "images": [
             "images/3bhk_living_blue.jpg"
           ]
@@ -161,7 +161,7 @@
           "type": "Trevor's Beach House",
           "storage": "6000",
           "capacity": 4,
-          "available": true,
+          "available": false,
           "images": [
             "images/1bhk_living.jpg"
           ]
@@ -170,7 +170,7 @@
           "type": "Mid-End Apartment(House)",
           "storage": "5000",
           "capacity": 4,
-          "available": true,
+          "available": false,
           "images": [
             "images/1bhk_living.jpg"
           ]
@@ -179,7 +179,7 @@
           "type": "Mid-End Apartment(House)",
           "storage": "5000",
           "capacity": 4,
-          "available": true,
+          "available": false,
           "images": [
             "images/1bhk_living.jpg"
           ]
@@ -212,7 +212,7 @@
           "type": "High-End Apartment",
           "storage": "10000",
           "capacity": 5,
-          "available": true,
+          "available": false,
           "images": [
             "images/3bhk_living_blue.jpg"
           ]
@@ -221,7 +221,7 @@
           "type": "High-End Apartment",
           "storage": "10000",
           "capacity": 5,
-          "available": true,
+          "available": false,
           "images": [
             "images/1bhk_living.jpg"
           ]
@@ -230,7 +230,7 @@
           "type": "Franklin's Mansion",
           "storage": "10000",
           "capacity": 4,
-          "available": true,
+          "available": false,
           "images": [
             "images/1bhk_living.jpg"
           ]
@@ -239,7 +239,7 @@
           "type": "Mid-End Apartment(House)",
           "storage": "5000",
           "capacity": 4,
-          "available": true,
+          "available": false,
           "images": [
             "images/1bhk_living.jpg"
           ]
@@ -263,7 +263,7 @@
           "type": "Michael's Mansion",
           "storage": "10000",
           "capacity": 4,
-          "available": true,
+          "available": false,
           "images": [
             "images/3bhk_living_blue.jpg"
           ]
@@ -272,7 +272,7 @@
           "type": "Mid-End Apartment(House)",
           "storage": "5000",
           "capacity": 4,
-          "available": true,
+          "available": false,
           "images": [
             "images/1bhk_living.jpg"
           ]
@@ -341,7 +341,7 @@
           "type": "Michael's Mansion",
           "storage": "10000",
           "capacity": 4,
-          "available": true,
+          "available": false,
           "images": [
             "images/3bhk_living_blue.jpg"
           ]
@@ -359,7 +359,7 @@
           "type": "Trevor's Beach House",
           "storage": "6000",
           "capacity": 4,
-          "available": true,
+          "available": false,
           "images": [
             "images/1bhk_living.jpg"
           ]
@@ -383,7 +383,7 @@
           "type": "Michael's Mansion",
           "storage": "10000",
           "capacity": 4,
-          "available": true,
+          "available": false,
           "images": [
             "images/3bhk_living_blue.jpg"
           ]
@@ -407,7 +407,7 @@
           "type": "Trevor's Beach House",
           "storage": "6000",
           "capacity": 4,
-          "available": true,
+          "available": false,
           "images": [
             "images/3bhk_living_blue.jpg"
           ]
@@ -416,7 +416,7 @@
           "type": "Trevor's Beach House",
           "storage": "6000",
           "capacity": 4,
-          "available": true,
+          "available": false,
           "images": [
             "images/1bhk_living.jpg"
           ]
@@ -425,7 +425,7 @@
           "type": "Trevor's Beach House",
           "storage": "6000",
           "capacity": 4,
-          "available": true,
+          "available": false,
           "images": [
             "images/1bhk_living.jpg"
           ]
@@ -434,7 +434,7 @@
           "type": "Trevor's Beach House",
           "storage": "6000",
           "capacity": 4,
-          "available": true,
+          "available": false,
           "images": [
             "images/1bhk_living.jpg"
           ]
@@ -443,7 +443,7 @@
           "type": "Trevor's Beach House",
           "storage": "6000",
           "capacity": 4,
-          "available": true,
+          "available": false,
           "images": [
             "images/1bhk_living.jpg"
           ]
@@ -467,7 +467,7 @@
           "type": "Low-End Apartment",
           "storage": "2500",
           "capacity": 2,
-          "available": true,
+          "available": false,
           "images": [
             "images/3bhk_living_blue.jpg"
           ]
@@ -476,7 +476,7 @@
           "type": "Low-End Apartment",
           "storage": "2500",
           "capacity": 2,
-          "available": true,
+          "available": false,
           "images": [
             "images/1bhk_living.jpg"
           ]
@@ -485,7 +485,7 @@
           "type": "Low-End Apartment",
           "storage": "2500",
           "capacity": 2,
-          "available": true,
+          "available": false,
           "images": [
             "images/1bhk_living.jpg"
           ]
@@ -494,7 +494,7 @@
           "type": "Low-End Apartment",
           "storage": "2500",
           "capacity": 2,
-          "available": true,
+          "available": false,
           "images": [
             "images/1bhk_living.jpg"
           ]
@@ -503,7 +503,7 @@
           "type": "Low-End Apartment",
           "storage": "2500",
           "capacity": 2,
-          "available": true,
+          "available": false,
           "images": [
             "images/1bhk_living.jpg"
           ]
@@ -512,7 +512,7 @@
           "type": "Low-End Apartment",
           "storage": "2500",
           "capacity": 2,
-          "available": true,
+          "available": false,
           "images": [
             "images/1bhk_living.jpg"
           ]
@@ -521,7 +521,7 @@
           "type": "Low-End Apartment",
           "storage": "2500",
           "capacity": 2,
-          "available": true,
+          "available": false,
           "images": [
             "images/1bhk_living.jpg"
           ]
@@ -530,7 +530,7 @@
           "type": "Low-End Apartment",
           "storage": "2500",
           "capacity": 2,
-          "available": true,
+          "available": false,
           "images": [
             "images/1bhk_living.jpg"
           ]
@@ -539,7 +539,7 @@
           "type": "Low-End Apartment",
           "storage": "2500",
           "capacity": 2,
-          "available": true,
+          "available": false,
           "images": [
             "images/1bhk_living.jpg"
           ]
@@ -548,7 +548,7 @@
           "type": "Low-End Apartment",
           "storage": "2500",
           "capacity": 2,
-          "available": true,
+          "available": false,
           "images": [
             "images/1bhk_living.jpg"
           ]
@@ -557,7 +557,7 @@
           "type": "Low-End Apartment",
           "storage": "2500",
           "capacity": 2,
-          "available": true,
+          "available": false,
           "images": [
             "images/1bhk_living.jpg"
           ]
@@ -581,7 +581,7 @@
           "type": "Low-End Apartment",
           "storage": "2500",
           "capacity": 2,
-          "available": true,
+          "available": false,
           "images": [
             "images/3bhk_living_blue.jpg"
           ]
@@ -590,7 +590,7 @@
           "type": "Low-End Apartment",
           "storage": "2500",
           "capacity": 2,
-          "available": true,
+          "available": false,
           "images": [
             "images/1bhk_living.jpg"
           ]
@@ -599,7 +599,7 @@
           "type": "Low-End Apartment",
           "storage": "2500",
           "capacity": 2,
-          "available": true,
+          "available": false,
           "images": [
             "images/1bhk_living.jpg"
           ]
@@ -608,7 +608,7 @@
           "type": "Low-End Apartment",
           "storage": "2500",
           "capacity": 2,
-          "available": true,
+          "available": false,
           "images": [
             "images/1bhk_living.jpg"
           ]
@@ -617,7 +617,7 @@
           "type": "Low-End Apartment",
           "storage": "2500",
           "capacity": 2,
-          "available": true,
+          "available": false,
           "images": [
             "images/1bhk_living.jpg"
           ]
@@ -626,7 +626,7 @@
           "type": "Low-End Apartment",
           "storage": "2500",
           "capacity": 2,
-          "available": true,
+          "available": false,
           "images": [
             "images/1bhk_living.jpg"
           ]
@@ -635,7 +635,7 @@
           "type": "Low-End Apartment",
           "storage": "2500",
           "capacity": 2,
-          "available": true,
+          "available": false,
           "images": [
             "images/1bhk_living.jpg"
           ]
@@ -644,7 +644,7 @@
           "type": "Low-End Apartment",
           "storage": "2500",
           "capacity": 2,
-          "available": true,
+          "available": false,
           "images": [
             "images/1bhk_living.jpg"
           ]
@@ -653,7 +653,7 @@
           "type": "Low-End Apartment",
           "storage": "2500",
           "capacity": 2,
-          "available": true,
+          "available": false,
           "images": [
             "images/1bhk_living.jpg"
           ]
@@ -677,7 +677,7 @@
            "type": "Mid-End Apartment(House)",
           "storage": "5000",
           "capacity": 4,
-          "available": true,
+          "available": false,
           "images": [
             "images/3bhk_living_blue.jpg"
           ]
@@ -686,7 +686,7 @@
            "type": "Mid-End Apartment(House)",
           "storage": "5000",
           "capacity": 4,
-          "available": true,
+          "available": false,
           "images": [
             "images/1bhk_living.jpg"
           ]
@@ -695,7 +695,7 @@
            "type": "Mid-End Apartment(House)",
           "storage": "5000",
           "capacity": 4,
-          "available": true,
+          "available": false,
           "images": [
             "images/1bhk_living.jpg"
           ]
@@ -704,7 +704,7 @@
            "type": "Mid-End Apartment(House)",
           "storage": "5000",
           "capacity": 4,
-          "available": true,
+          "available": false,
           "images": [
             "images/1bhk_living.jpg"
           ]
@@ -713,7 +713,7 @@
            "type": "Mid-End Apartment(House)",
           "storage": "5000",
           "capacity": 4,
-          "available": true,
+          "available": false,
           "images": [
             "images/1bhk_living.jpg"
           ]
@@ -722,7 +722,7 @@
            "type": "Mid-End Apartment(House)",
           "storage": "5000",
           "capacity": 4,
-          "available": true,
+          "available": false,
           "images": [
             "images/1bhk_living.jpg"
           ]
@@ -731,7 +731,7 @@
            "type": "Mid-End Apartment(House)",
           "storage": "5000",
           "capacity": 4,
-          "available": true,
+          "available": false,
           "images": [
             "images/1bhk_living.jpg"
           ]
@@ -740,7 +740,7 @@
            "type": "Mid-End Apartment(House)",
           "storage": "5000",
           "capacity": 4,
-          "available": true,
+          "available": false,
           "images": [
             "images/1bhk_living.jpg"
           ]
@@ -749,7 +749,7 @@
            "type": "Mid-End Apartment(House)",
           "storage": "5000",
           "capacity": 4,
-          "available": true,
+          "available": false,
           "images": [
             "images/1bhk_living.jpg"
           ]
@@ -758,7 +758,7 @@
            "type": "Mid-End Apartment(House)",
           "storage": "5000",
           "capacity": 4,
-          "available": true,
+          "available": false,
           "images": [
             "images/1bhk_living.jpg"
           ]
@@ -767,7 +767,7 @@
            "type": "Mid-End Apartment(House)",
           "storage": "5000",
           "capacity": 4,
-          "available": true,
+          "available": false,
           "images": [
             "images/1bhk_living.jpg"
           ]
@@ -776,7 +776,7 @@
            "type": "Mid-End Apartment(House)",
           "storage": "5000",
           "capacity": 4,
-          "available": true,
+          "available": false,
           "images": [
             "images/1bhk_living.jpg"
           ]
@@ -785,7 +785,7 @@
            "type": "Mid-End Apartment(House)",
           "storage": "5000",
           "capacity": 4,
-          "available": true,
+          "available": false,
           "images": [
             "images/1bhk_living.jpg"
           ]
@@ -794,7 +794,7 @@
            "type": "Mid-End Apartment(House)",
           "storage": "5000",
           "capacity": 4,
-          "available": true,
+          "available": false,
           "images": [
             "images/1bhk_living.jpg"
           ]
@@ -803,7 +803,7 @@
            "type": "Mid-End Apartment(House)",
           "storage": "5000",
           "capacity": 4,
-          "available": true,
+          "available": false,
           "images": [
             "images/1bhk_living.jpg"
           ]
@@ -812,7 +812,7 @@
            "type": "Mid-End Apartment(House)",
           "storage": "5000",
           "capacity": 4,
-          "available": true,
+          "available": false,
           "images": [
             "images/1bhk_living.jpg"
           ]
@@ -821,7 +821,7 @@
            "type": "Mid-End Apartment(House)",
           "storage": "5000",
           "capacity": 4,
-          "available": true,
+          "available": false,
           "images": [
             "images/1bhk_living.jpg"
           ]
@@ -830,7 +830,7 @@
            "type": "Mid-End Apartment(House)",
           "storage": "5000",
           "capacity": 4,
-          "available": true,
+          "available": false,
           "images": [
             "images/1bhk_living.jpg"
           ]
@@ -839,7 +839,7 @@
            "type": "Mid-End Apartment(House)",
           "storage": "5000",
           "capacity": 4,
-          "available": true,
+          "available": false,
           "images": [
             "images/1bhk_living.jpg"
           ]
