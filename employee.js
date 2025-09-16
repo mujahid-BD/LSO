@@ -39,6 +39,7 @@ function renderEmployees() {
             <img src="${employee.image}" alt="${employee.name}" loading="lazy">
             <h3>${employee.name}</h3>
             <p>${employee.position}</p>
+            <p>${employee.phone}</p>
         `;
         staffList.appendChild(card);
     });
